@@ -591,7 +591,7 @@ section {
     width: 0;
   }
 }
- 
+
 .hovereffects {
   width: 300px;
   height: 300px;
@@ -720,7 +720,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: black;
+  color: white;
   transition: ease-in-out 0.3s;
 }
 
@@ -845,6 +845,7 @@ section {
 .team .member .pic {
   overflow: hidden;
   width: 150px;
+  object-fit: cover;
   border-radius: 50%;
   margin: 0 auto 20px auto;
 }
