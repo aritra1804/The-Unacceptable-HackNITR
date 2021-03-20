@@ -321,8 +321,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #009970;
-  border: 2px solid #009970;
+  background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
+  border: 2px solid linear-gradient(to left, #30cfd0 0%, #330867 100%);
 }
 
 @media (min-width: 1024px) {
