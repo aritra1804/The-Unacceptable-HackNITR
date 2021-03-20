@@ -1,3 +1,3 @@
 # THE UNACCEPTABLE
 
-This website is made for hackathon purpose.
+This website and prototype is made for hackathon purpose.
