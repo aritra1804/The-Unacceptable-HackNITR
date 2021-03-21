@@ -8,8 +8,8 @@ Check Live Here - https://savvy-tech.netlify.app/
 
 ## Demo Link
 
-Vimeo Link -
+Youtube - https://youtu.be/0mYG-CA1MFM
 
 ## More Information you can check our ppt also
 
-Ppt - 
+Ppt - https://docs.google.com/presentation/d/1e9MXeTiNhkis36Eyx6NLYi2pWQJUVCzckP27ldtOmaE/edit?usp=sharing
