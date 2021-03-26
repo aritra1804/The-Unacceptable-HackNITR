@@ -586,6 +586,105 @@ section {
   border: 2px solid #009970;
 }
 
+@keyframes animate {
+  from {
+    width: 0;
+  }
+}
+
+.hovereffects {
+  width: 300px;
+  height: 300px;
+  margin-top: 25px;
+  margin-left: 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  margin-bottom: 10px;
+  animation: animate 4s ease-in-out forwards;
+}
+
+.hovereffects .overlay {
+  width: 260px;
+  height: 400px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffects img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  object-fit: contain;
+}
+
+.hovereffects h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 2px;
+}
+
+.hovereffects a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+}
+
+.hovereffects a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffects:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffects:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffects:hover h2,
+.hovereffects:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.hovereffects:hover a.info {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -621,7 +720,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: black;
+  color: white;
   transition: ease-in-out 0.3s;
 }
 
@@ -644,6 +743,15 @@ section {
   color: #fff;
   background: black;
 }
+
+/*--------------------------------------------------------------
+# How it works
+--------------------------------------------------------------*/
+
+.howitworks > img {
+  width: 700px;
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -737,6 +845,7 @@ section {
 .team .member .pic {
   overflow: hidden;
   width: 150px;
+  object-fit: cover;
   border-radius: 50%;
   margin: 0 auto 20px auto;
 }
@@ -1156,4 +1265,40 @@ section {
   background: #00805d;
   color: #fff;
   text-decoration: none;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 0.2s 2s ease-in forwards;
+  z-index: 99;
+}
+
+.progress-bar {
+  width: 400px;
+  height: 20px;
+  background-color: darkslategray;
+  position: relative;
+  top: calc(50% - 10px);
+  left: calc(50% - 250px);
+}
+
+.progress-bar::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 20px;
+  position: absolute;
+  top: -1px;
+  animation: moveIn 1.5s ease-in-out forwards;
+}
+
+@keyframes loader {
+  to {
+    left: -100%;
+  }
 }
